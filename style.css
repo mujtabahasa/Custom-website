@@ -50,12 +50,23 @@ span{
     ul li{
         display: block;
     }
-    ul {
+
+    .navbar ul{
         display: none;
-width: 100%;
+        position: absolute;
+        top: 7.4%;
+        left: 0%;
+        text-align: justify;
+        margin-top: 40px;
+        background-color:rgb(160, 159, 158);
+        width: 100%;
+    }
+    .navbar ul li{
+        border-top: 1px solid gray;
+        padding-top: 6px;
     }
 }
 
 .container{
- 
+ clear: both;
 }
