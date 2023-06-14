@@ -54,8 +54,8 @@ span{
     .navbar ul{
         display: none;
         position: absolute;
-        top: 8%;
-        left: 0%;
+        top: 37px;
+        left: 0;
         text-align: justify;
         margin-top: 40px;
         background-color:rgb(160, 159, 158);
