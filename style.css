@@ -1,40 +1,49 @@
-*{
+/* Reset default margin, padding, and box-sizing */
+* {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
 
-.header{
+/* Header styles */
+.header {
     padding: 20px;
     font-family: sans-serif;
-    background-color:rgb(160, 159, 158);
-   
+    background-color: rgb(160, 159, 158);
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
-.header img{
+/* Logo image styles within the header */
+.header img {
     width: 75px;
     height: 65px;
     float: left;
 }
 
-.navbar{
-     text-align: right;
+/* Navbar styles */
+.navbar {
+    text-align: right;
 }
 
-ul li{
+/* List item styles within the navbar */
+ul li {
     display: inline-block;
     margin: 20px;
     list-style: none;
 }
 
-ul li a{
+/* Anchor styles within list items */
+ul li a {
     text-decoration: none;
     color: whitesmoke;
     font-weight: 500;
     text-transform: uppercase;
 }
 
-span{
+/* Hidden span element (used for responsive navigation) */
+span {
     margin: 0px 20px;
     font-size: 28px;
     cursor: pointer;
@@ -42,31 +51,45 @@ span{
 }
 
 
+.container {
+    clear: both;
+}
 
-@media (max-width:700px) {
-    span{
+.container div{
+ width: 400px;
+ height: 400px;
+ border: 2px solid black;
+}
+
+/* Media query for screens with a maximum width of 700px */
+@media (max-width: 700px) {
+    /* Display the hidden span element */
+    span {
         display: block;
     }
-    ul li{
+    
+    /* Change list items to display block for vertical stacking */
+    ul li {
         display: block;
     }
-
-    .navbar ul{
+    
+    /* Styles for the dropdown menu within the navbar */
+    .navbar ul {
         display: none;
         position: absolute;
         top: 37px;
         left: 0;
         text-align: justify;
         margin-top: 40px;
-        background-color:rgb(160, 159, 158);
+        background-color: rgb(160, 159, 158);
         width: 100%;
     }
-    .navbar ul li{
+    
+    /* Styles for list items within the dropdown menu */
+    .navbar ul li {
         border-top: 1px solid gray;
         padding-top: 6px;
     }
 }
 
-.container{
- clear: both;
-}
+/* Clear floats within the container */
